@@ -8,11 +8,13 @@ RUN apk update && \
   apk add git bash && \
   npm i -g create-react-app jshint
 
-# COPY package.json $APP_ROOT
-# COPY package-lock.json $APP_ROOT
+COPY package.json $APP_ROOT
+COPY package-lock.json $APP_ROOT
 
 WORKDIR $APP_ROOT
-# RUN npm install
+
+RUN npm install
+
 COPY . $APP_ROOT
 
 EXPOSE 8000
