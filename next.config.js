@@ -5,21 +5,19 @@ const urlPrefix = process.env.URL_PREFIX ? "/" + process.env.URL_PREFIX : "";
 
 /** @type {import('next').NextConfig} */
 module.exports = {
-
+  reactStrictMode: true,
+  assetPrefix: urlPrefix,
+  basePath: urlPrefix,
+  trailingSlash: true,
 };
 
-module.exports = withPlugins([
+withPlugins([
   [
     optimizedImages,
     {
       /* config for next-optimized-images */
     },
-      reactStrictMode: true,
-  assetPrefix: urlPrefix,
-  basePath: urlPrefix,
-  trailingSlash: true,
   ],
-  
 
   // your other plugins here
 ]);
