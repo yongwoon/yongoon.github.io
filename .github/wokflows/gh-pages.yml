@@ -3,12 +3,11 @@ on:
   push:
     branches:
       - master
-      - feature/gh-pages
 
 jobs:
   build-deploy:
     # ubuntu OS を仮想マシン上に用意する
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
 
