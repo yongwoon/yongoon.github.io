@@ -1,0 +1,18 @@
+version: "3"
+services:
+  app:
+    container_name: dev_yongwoon_github_io
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    # command: npm run dev
+    tty: true
+    volumes:
+      - ./:/var/www
+    ports:
+      - "8000:8000"
+    networks:
+      - dev_yongwoon_github_io_network
+
+networks:
+  dev_yongwoon_github_io_network:
