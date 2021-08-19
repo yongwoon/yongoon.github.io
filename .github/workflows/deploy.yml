@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - feature/fix-github-action
 
 jobs:
   build-deploy:
