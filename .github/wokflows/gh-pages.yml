@@ -1,10 +1,9 @@
-name: github pages
-
-# masterブランチにプッシュしたときjobsに記述した操作を行う
+name: yongwoon.github.io
 on:
   push:
     branches:
       - master
+      - feature/gh-pages
 
 jobs:
   build-deploy:
