@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - master
+      - feauter/gh-pages
 
 jobs:
   build-deploy:
