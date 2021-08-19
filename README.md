@@ -9,3 +9,9 @@ npm run dev
 # or
 yarn dev
 ```
+
+## Deploty to github io
+
+```bash
+npm run deploy
+```
